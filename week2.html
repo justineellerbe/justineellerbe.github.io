@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Week 2</title>
+    <link rel="stylesheet" href="styles-CSS/weekly.css">
+</head>
+<body>
+    <header>
+        <h2>Week 2 Reading Notes</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <main>
+        <section>
+            <h3>Programming Basics</h3>
+            <p>
+                Comments are extremely important: well-commented code is the hallmark of a ninja programmer. It's good practice to include comments in code.
+                <ul id="ulOne">
+                    <li>// for single line comments</li>
+                    <li>/*...*/ for multi line comments</li>
+                </ul>
+            </p>
+            <p>
+                Scopes
+                <ul id="ulOne">
+                    <li>Refers to where a constant or variable is accessible by the program.</li>
+                    <li>Global - any variable declared outside of a block, being accessible everywhere in the program. Not conisdered good practice.</li>
+                    <li>Local - variables are declared inside blocks, restricting access to only the inside of that block.</li>
+                    <li>If <strong>let</strong> or <strong>const</strong> are not used, the variable will have global scope.</li>
+                    </ul>
+            </p>
+            <p>
+                Naming
+                <ul id="ulOne">
+                    <li>Constant and variable names are case sensitive.</li>
+                    <li>Whether Camel case (starts with a lowercase letter and then each new word is capitalized) or Underscore (separating each word with an underscore), the most important thing about naming conventions is consistency.</li>
+                </ul>
+            </p>
+            <p>
+                String Properties and Methods
+                <ul id="ulOne">
+                    <li>Adding a backslash "/" before special characters such as single and double quotation marks will keep the special character in the string instrad of it being terminated.</li>
+                    <li>To call a method, use the dot operator (.) followed by the name of the method. An example is name.toUpperCase() or name.toLowerCase().</li>
+                </ul>
+            </p>
+            <p>
+                Numbers
+                <ul id="ulOne">
+                    <li>Hexadecimal - numbers that start with "Ox" (base 16)</li>
+                    <li>Octal - numbers that start with "0o" (base 8)</li>
+                    <li>Binary - numbers that start with "0b" (base 2)</li>
+                    <li>Exponential - e or E</li>
+                    <li>Incrementing Values - using ++ or -- operator to increment a value by 1 and can be placed before or after the variable. </br>
+                    Example: points++ = points + 1 OR ++points = will increase points to the number then return it</li>
+                    <li>parseInt() removes the part after the decimal point</li>
+                    <li>parseFloat() converts strings into floating point decimal numbers</li>
+                </ul>
+            </p>
+            <p>
+                Logical Operators
+                <ul id="ulOne">
+                    <li>! - NOT</li>
+                    <li>&& - AND</li>
+                    <li>|| - OR</li>
+                    <li>== - soft equality (when used, JS doesn't take into account the data type and will attempt to coerce the two values to the same type when doing the comparison)</li>
+                    <li>=== - hard equality (returns true if and only if the two values are of the same data type)</li>
+                    <li>!= - inequality</li>
+                </ul>
+            </p>
+        </section>
+        <section>
+            <h3>Arrays, Logic, and Loops</h3>
+            <p>
+                Arrays
+                <ul id="ulOne">
+                    <li>An ordered list of values.</li>
+                    <li>Created by writing a pair of square brackets [] or the function "new Array()".</li>
+                    <li>.pop() removes the last item from an array</li>
+                    <li>.shift() removes the first item from an array</li>
+                    <li>unshift() appends a new item to the beginning of an array</li>
+                    <li>.concat() can be used to merge an array with one or more arrays</li>
+                    <li>.join() turns the array into a string separating the items by commas. .join(' & ') will separate the items in the array by a & instead of a comma</li>
+                    <li>.slice() creates a subarray startingat one position and finishing at another</li>
+                    <li>.splice() removes items from an array then inserts new items in their place</li>
+                    <li>.reverse() reverses the order of an array</li>
+                    <li>.sort() sorts the order of an array</li>
+                </ul>
+            </p>
+            <p>
+                Sets
+                <ul id="ulOne">
+                    <li>new Set() creates an empty set</li>
+                    <li>.add() adds values into a set. Can also be used to add separate words into a set</li>
+                    <li>.size() returns the number of values in a set</li>
+                    <li>.has() is used to check if a value is in a set. This returns a boolean value of true or false</li>
+                    <li>.delete() removes a value from a set</li>
+                    <li>.clear() removes ALL values from a set</li>
+                    <li>Sets can be converted to Arrays.</li>
+                </ul>
+            </p>
+            <p>
+                Maps
+                <ul id="ulOne">
+                    <li>A convenient way of keeping a list of key and value pairs, and are similar to hashes, hash tables, or dictionaries in other languages.</li>
+                    <li>Can use any data type as a key.</li>
+                    <li>Restricted to .get() in order to retrieve values in a map.</li>
+                    <li>new Map() to create an empty map object</li>
+                </ul>
+            </p>
+            <p>
+                Logic
+                <ul id="ulOne">
+                    <li>if statements - if (condition) {}</li>
+                    <li>else statements - if (condition){} else{}. Used to add an alternative block of code if the condition is false</li>
+                    <li>(condition) ? (code to run if cond. is true) : (code to run if cond. is false)</li>
+                    <li>Switch statements are used and are easier to follow when there are lots of conditions to test. Uses case statements.</li>
+            </p>
+            <p>
+                Loops
+                <ul id="ulOne">
+                    <li>Will repeat a piece of code over and over again according to certain conditions</li>
+                    <li>While Loops - while(condition)</li>
+                    <li>do...while loops - do{ do (something) } while (condition)</li>
+                    <li>for loops - for (initialization ; condition ; after) { do (something) }</li>
+                    <li>nested for loops - placing a loop inside another loop</li>
+                </ul>
+            </p>
+        </section>
+    </main>
+    <hr>
+    <nav>
+        <ul>
+            <li><a href="week1.html">Previous Page</a></li>
+            <li><a href="week3.html">Next Page</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <footer>
+        <section>
+            <p>Justine Ellerbe </br>
+                CIT261 | Winter 2020 </br>
+                Brigham Young University - Idaho
+            </p>
+        </section>
+    </footer>
+</body>
+</html>

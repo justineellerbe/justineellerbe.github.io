@@ -1,0 +1,36 @@
+header {
+    text-align: center;
+    font-family: Calibri;
+}
+
+main {
+    font-family: Calibri;
+}
+
+h3 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#ulOne {
+    list-style-type: disc;
+}
+
+ul a {
+    background-color: lightgray;
+    display: inline-block;
+    text-align: center;
+    margin: 2px;
+    padding: 10px;
+    width: 80%;
+    text-decoration: none;
+    font-family: Calibri;
+}
+
+footer {
+    text-align: center;
+    font-family: Calibri;
+}

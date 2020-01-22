@@ -1,0 +1,23 @@
+header {
+    color: black;
+    text-align: center;
+    font-family: Calibri;
+}   
+
+main {
+    font-family: Calibri;
+}
+
+ul {
+    list-style-type: none;
+    font-family: Calibri;
+}
+
+ul a {
+    background-color: lightgray;
+    display: inline-block;
+    margin: 2px;
+    padding: 10px;
+    text-decoration: none;
+    width: 80%;
+}
