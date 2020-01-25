@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Week 3</title>
+    <link rel="stylesheet" href="styles-CSS/weekly.css">
+</head>
+<body>
+    <header>
+        <h2>Week 3 Reading Notes</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <main>
+        <section>
+            <h3>Objects</h3>
+            <p>
+                <ul id="ulOne">
+                    <li>An object in JavaScript is a self-contained set of related values and functions.</li>
+                    <li>The in operator or the .hasOwnProperty() method can be used to check whether an object has a particular property.</li>
+                    <li>JSON.parse() takes a string of data in JSON format and returns a JS object.</li>
+                    <li>JSON.stringify() takes a JS object and returns a string of JSON data.</li>
+                    <li>The Math object has several properties representing mathematical constants and methods that carry out different common mathematical operations.</li>
+                    <li>Getter methods return information about an object.</li>
+                    <li>Setter methods can be used to change the value of the date held in an object.</li>
+                    <li>The RegExp Object is a pattern that can be used to search strings for matches to the pattern like 'find and replace' type operations.</li>
+                </ul>             
+            </p>
+        </section>
+        <section>
+            <h3>The Document Object Model</h3>
+            <p>
+                What is it?
+            </p>
+                
+            <p>
+                DOM for short, represents an HTML document as a network of connected nodes that form a tree-like structure.
+            </p>
+            <p>
+                Legacy DOM Shortcut Methods
+                <ul id="ulOne">
+                    <li>Document.body returns the body element</li>
+                    <li>Document.images returns a node list of all the images contained in the doc.</li>
+                    <li>Document.links returns a node list of all the < a > and < area > elements that have an href attribute.</li>
+                    <li>Document.anchors returns a node list of all the < a > elements that have a name attribute.</li>
+                    <li>Document.forums returns a node list of all the forms in the document.</li>
+                </ul>
+            </p>
+            <p>
+                Query Selectors
+                <ul id="ulOne">
+                    <li>The document.querySelector() method allows you to use CSS notations to find the <i>first</i> element in the document that matches a CSS selector provided as an argument. It will retun null if no elements match.</li>
+                    <li>The document.querySelectorAll() method also uses CSS notations but returns a node list of <i>all</i> the elements in the doc that match the CSS query selector. If no elements match, it will return an empty node list.</li>
+            </p>
+            <p>
+                Getting and Setting Attributes
+                <ul id="ulOne">
+                    <li>getAttribute() method returns the value of the attribute provided as an argument.</li>
+                    <li>setAttribute() can change the value of an element's attributes. </li>
+                    <li>The className property allows the class of an element to be set directly. It can also be used to find out the value of the class attribute.</li>
+                    <li>The classList property is a list of all the classes an element has.</li>
+            </p>
+            <p>
+                Dynamic Markup
+                <ul id="ulOne">
+                    <li>The createElement() method takes a tag name as a parameter and returns that element.</li>
+                    <li>The document.createTextNode() is used to create a text node. It takes a parameter, which is a string containing the text that goes in the node.</li>
+                    <li>Every node object has an appendChild() method that will add another node (given as an argument) as a child node. The newly created text node should be a child node of the list element node. </li>
+                    <li>The removeChild() method is used to remove an element from a page.</li>
+                    <li>The replaceChild() method can be used to replace one node with another. It’s called on the parent node and has two parameters: the new node and the node that is to be replaced. </li>
+                    <li>The innerHTML element returns all the child elements of an element as a string of HTML.</li>
+            </p>
+        </section>
+        <section>
+            <h3>Events</h3>
+            <p>
+                Event Listeners
+                <ul id="ulOne">
+                    <li>An event listener will notify when an event happens, and the program can then respond appropriately. It allows the program to continue with other tasks while it waits for the event to happen.</li>
+                    <li>The addEventListener() method can be called without a node, in which case it is applied to the global object. Its first parameter is the type of event, and the second is a callback function that is invoked when the event occurs.</li>
+                    <li>The target property returns a reference to the node that fired the event.</li>
+                    <li>The removeEventListener() is used to remove an event listener.</li>
+                    <li>preventDefault() is a method of the event object that can be used inside the callback function to stop the default behavior happening.</li>
+            </p>
+        </section>
+    </main>
+    <hr>
+    <nav>
+        <ul>
+            <li><a href="week2.html">Previous Page</a></li>
+            <li><a href="week4.html">Next Page</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <footer>
+        <section>
+            <p>Justine Ellerbe </br>
+                CIT261 | Winter 2020 </br>
+                Brigham Young University - Idaho
+            </p>
+        </section>
+    </footer>
+</body>
+</html>
