@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Week 5</title>
+    <link rel="stylesheet" href="styles-CSS/weekly.css">
+</head>
+<body>
+    <header>
+        <h2>Week 5 Reading Notes</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <main>
+        <section>
+            <h3>Testing and Debugging</h3>
+            <p>
+                Errors
+                <ul id="ulOne">
+                    <li>System error - there's a problem with the system or external devices. As programmers, we often have little influence on these errors and can be difficult to fix the root cause. Despite this, we should still be aware of them and attempt to reduce their impact by working around any problems they cause.</li>
+                    <li>Programmer error - program contains incorrect syntax or faulty logic; can be a typo. These errors are our responsibility. We must ensure they are minimized as much as possible and fixed promptly.</li>
+                    <li>User error - user entered data incorrectly. As programmers, we should try to limit these errors by predicting any possible interactions that may throw an error and ensure they are dealt with in a way that doesn't negatively affect the user experience.</li>
+                    </ul>
+            </p>
+            <p>
+                Exceptions
+                <ul id="ulOne">
+                    <li>An error that produces a return value that can then be used by the program to deal with the error.</li>
+                    <li>Stack trace - produced by an exception. This is a sequence of functions or method calls that lead to the point where the error occurred. A stack trace will work backwards from the point at which the error occurred to identify the original function or method that started the sequence.</li>
+                    </ul>
+            </p>
+            <p>
+                Warnings
+                <ul id="ulOne">
+                    <li>A warning can occur if there’s an error in the code that isn't enough to cause the program to crash. This means the program will continue to run after a warning. This might sound good, but it can be problematic, since the issue that produced the warning may cause the program to continue running incorrectly.</li>
+                    <li>When a runtime error occurs in the browser, the HTML will still appear, but the JavaScript code will stop working in the background, which isn’t always obvious at first. If a warning occurs, the JavaScript will continue to run (although possibly incorrectly).</li>
+                    </ul>
+            </p>
+            <p>
+                Testing and Debugging
+                <ul id="ulOne">
+                    <li>Ensure that the code written fails loudly in development so any errors can be identified and fixed quickly.</li>
+                    <li>In production, try to make the code fail gracefully (not completely silently, enough to know there’s an error), so the user experience is not affected, if possible. This is achieved by making sure exceptions are caught and dealt with, and code is tested rigorously.</li>
+                    <li>Linting tools can be used to test the quality of JS code. They are designed to highlight any sloppy programming practices or syntax errors, and will complain if certain style conventions are not followed.</li>
+                    <li>Debugging is the process of finding out where bugs occur in the code and then dealing with them.</li>
+                    <li>Test-driven development(TDD) is the process of writing tests before any actual code. Obviously these tests will initially fail, because there is no code to test. The next step is to write some code to make the tests pass. After this, the code is refactored to make it faster, more readable, and remove any repetition. The code is continually tested at each stage to make sure it continues to work. This process should be followed in small piecemeal chunks every time a new feature is implemented.</li>
+                    </ul>
+            </p>
+        </section>
+    </main>
+    <hr>
+    <nav>
+        <ul>
+            <li><a href="week4.html">Previous Page</a></li>
+            <li><a href="week6.html">Next Page</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <footer>
+        <section>
+            <p>Justine Ellerbe </br>
+                CIT261 | Winter 2020 </br>
+                Brigham Young University - Idaho
+            </p>
+        </section>
+    </footer>
+</body>
+</html>
