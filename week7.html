@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Week 7</title>
+    <link rel="stylesheet" href="styles-CSS/weekly.css">
+</head>
+
+<body>
+    <header>
+        <h2>Week 7 Reading Notes</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <main>
+        <section>
+            <h3>Further Functions</h3>
+            <p>
+                Properties and Methods
+                <ul id="ulOne">
+                    <li>Functions are first-class objects, meaning that they can have properties and methods themselves.</li>
+                    <li>If the function that’s called requires any parameters, these need to be provided as arguments after the first argument, which is always the value of "this".</li>
+                </ul>
+            </p>
+            <p>
+                Immediately Invoked Function Expressions
+                <ul id="ulOne">
+                    <li>Also known as IIFE, is an anonymous function that is invoked as soon as it's defined. IIFEs are a usefuly way of performing a task while keeping any variables wrapped up within the scope of the function.</li>
+                    <li>An IIFE can be used to enclose a block of code inside its own private scope so it doesn’t interfere with any other part of the program. Using IIFEs in this way means code can be added or removed separately.</li>
+                </ul>
+            </p>
+            <p>
+                Functions that Define and Rewrite themselves
+                <ul id="ulOne">
+                    <li>The dynamic nature of JavaScript means that a function is able to not only call itself, but define itself, and even redefine itself. This is done by assigning an anonymous function to a variable that hasthe same name as the function.</li>
+                    <li>The <i>Lazy Definition Pattern</i> is often used when some initialization code is required the first time it’s invoked. This means the initialization can be done the first time it’s called, then the function can be redefined to what you want it to be for every subsequent invocation.</li>
+                    <li>A recursive function is one that invokes itself until a certain condition is met. It’s a useful tool to use when iterative processes are involved.</li>
+                    <li>Callbacks are functions passed to other functions as arguments and then invoked inside the function they are passed to.</li>
+                    <li>A promise represents the future result of an asynchronous operation. Promises don't do anything that can't already be achieved using callbacks, but they help simplify the process, and avoid the convoluted code that can result from using multiple callbacks.</li>
+                    <li>A promise has three stages: <i>pending, unsettled,</i> and <i>settled</i>. At <i>settled</i>, it can result in either <i>resolved</i> or <i>rejected</i> outcomes.</li>
+                    <li>A promise is created using a constructor function. This takes a function called anexecutoras an argument. The executor initializes the promise and starts the asynchronous operation. It also accepts two functions as arguments: the resolve() function is called if the operation is successful, and the reject() function is called if the operation fails.</li>
+                </ul>
+            </p>
+            <p>
+                Functional Programming
+                <ul id="ulOne">
+                    <li>Involves breaking processes down into steps that can be applied as a series of functions.</li>
+                    <li>Pure functions are functions that don't rely on the state of the code they are called from, have no side-effects, and always give the same result when given the same arguments (referential transparency).</li>
+                    <li>Currying or partial application is the process of applying one argument at a time to a function. A new function is returned until all the arguments have been used.</li>
+                </ul>
+            </p>
+        </section>
+        <section>
+            <h3>AJAX</h3>
+            <p>
+                <ul id="ulOne">
+                    <li>Ajax is a technique that allows web pages to communicate asynchronously with a server, and it dynamically updates web pages without reloading. This enables data to be sent and received in the background, as well as portions of a page to be updated in response to user events, while the rest of the program continues to run.</li>
+                    <li>A client, such as a web browser, will request a resource (usually a web page) from a server, which processes the request and sends back a response to the client.</li>
+                    <li>A server is required when requesting resources using Ajax. Typically this involves using a server-side language, such as PHP, Ruby, Node.js, or .NET to serve the data response following an Ajax request (usually from a back-end database).</li>
+                    <li>The Response interface allows you to control the response received from a request or to create your own response objects.</li>
+                    <li>The Request interface allows you to create a request object that contains information about the request being made, such as the URL and headers.</li>
+                    <li>The Headers interface allows you to create HTTP headers that can be added to a request or response object.</li>
+                </ul>
+            </p>
+        </section>
+    </main>
+    <hr>
+    <nav>
+        <ul>
+            <li><a href="week5.html">Previous Page</a></li>
+            <li><a href="week8.html">Next Page</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <footer>
+        <section>
+            <p>Justine Ellerbe </br>
+                CIT261 | Winter 2020 </br>
+                Brigham Young University - Idaho
+            </p>
+        </section>
+    </footer>
+</body>
+
+</html>
