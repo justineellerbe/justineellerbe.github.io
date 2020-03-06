@@ -22,3 +22,18 @@
 .tic tr:last-child td {
     border-bottom: 0;
 }
+
+ul {
+    list-style-type: none;
+}
+
+ul a {
+    background-color: lightgray;
+    display: inline-block;
+    text-align: center;
+    margin: 2px;
+    padding: 10px;
+    width: 80%;
+    text-decoration: none;
+    font-family: Calibri;
+}

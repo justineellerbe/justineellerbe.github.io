@@ -42,3 +42,18 @@ main {
   background-color: bisque;
   text-decoration: underline;
 }
+
+ul {
+  list-style-type: none;
+}
+
+ul a {
+  background-color: lightgray;
+  display: inline-block;
+  text-align: center;
+  margin: 2px;
+  padding: 10px;
+  width: 80%;
+  text-decoration: none;
+  font-family: Calibri;
+}
