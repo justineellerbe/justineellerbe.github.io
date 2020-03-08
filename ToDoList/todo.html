@@ -12,26 +12,23 @@
 
 <body>
   <header><strong>To Dos</strong></header>
-  <section>
-    <h3>Still a work in progress</h3>
-    <ul id="myList">
-      <li class="checked">Pay bills</li>
-      <li>Finish homework</li>
-      <li>Go to the store</li>
-      <li>Clean the house</li>
-    </ul>
-  </section>
-  </br>
-  <section class = "buttons">
-    <button type ="button" onclick="displayAll()">All</button>
-    <button type ="button" onclick="displayRemaining()">Remaining</button>
-    <button type ="button" onclick="displayCompleted()">Completed</button>
-  </section>
-  </br>
   <section class="input">
     <input type="text" id="myInput" placeholder="Type here..">
     <span onclick="add()" class="button">+</span>
   </section>
+<hr>
+  <section>
+    <ul id="myList">
+    </ul>
+  </section>
+  </br>
+  <section class="buttons">
+    <button type="button" onclick="displayAll()">All</button>
+    <button type="button" onclick="displayRemaining()">Remaining</button>
+    <button type="button" onclick="displayCompleted()">Completed</button>
+  </section>
+  </br>
+
 
   <script src="todo.js"></script>
 </body>

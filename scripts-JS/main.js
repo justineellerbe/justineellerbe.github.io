@@ -1,2 +1,0 @@
-const myName = 'Justine Ellerbe';
-
