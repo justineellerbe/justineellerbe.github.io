@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Week 10</title>
+    <link rel="stylesheet" href="styles-CSS/weekly.css">
+</head>
+
+<body>
+    <header>
+        <h2>Week 10 Reading Notes</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <main>
+        <section>
+            <h3>Validating Forms</h3>
+            <p>
+                Form validation
+                <ul id="ulOne">
+                    <li>When data is entered, the browser and/or the web server will check to see that the data is in the correct format and within the constraints set by the app.</li>
+                    <li>Validation done in the browser is called client-side validation.</li>
+                    <li>Validation done on the server is called server-side validation.</li>
+                    <li>If the information entered is correctly formatted, the app allows the data to be submitted to the server and (usually) saved in a database.</li>
+                    <li>If the information entered isn't correctly formatted, the app gives the user an error message explaining what needs to be corrected.</li>
+                    <li>Three main reasons for form validation: (1) Right data in the right format; (2) Protection on user data; and (3) Protection on the application.</li>
+                </ul>
+            </p>
+            <p>
+                Client-side validation
+                <ul id="ulOne">
+                    <li>An initial check and an important feature of good user experience.</li>
+                    <li>Catching invalid data on the client-side lets the user fix it straight away.</li>
+                    <li>Should not be considere an exhaustive security measure.</li>
+                    <li>Built-in form validation uses HTML5 features and generally doesn't require much JS. This has better performance than JS, but it isn't as customizable.</li>
+                    <li>JS validation is coded using JavaScript. Completely customizable but everything needs to be created (or use a library).</li>
+                </ul>
+            </p>
+            <p>
+                <p>
+                    Validating Forms Without a Built-in API
+                    <ul id="ulOne">
+                        <li>In some cases, such as legacy browser support or custom controls, the Construction Validation API won't be available or might not be the preferred validation. JS can still be used.</li>
+                        <li>What kind of validation should I perform? - Determine how to validate the data: string operations, type conversion, regular expressions, etc.</li>
+                        <li>What should I do if the form doesn't validate? - This is a UI matter. Decide how the form will behave. Does the form send data anyway? Should the fields in error be highlighted? Should there be an error message displayed?</li>
+                        <li>How can I help the user to correct invalid data? - In order to reduce the user's frustration, it's very important to provide as much helpful information as possibly to guide them in correcting their inputs. Offer up-front suggestions so they know what's expected, as well as clear error messages.</li>
+                    </ul>
+                </p>
+            </p>
+        </section>
+        <section>
+            <h3>Using Fetch</h3>
+            <p>
+                Fetch API
+                <ul id="ulOne">
+                    <li>Provides a JS interface for accessing and manipulating parts of the HTTP pipeline, such as requests and responses.</li>
+                    <li>It also provides a global <em>fetch()</em> method that provides an easy, logical way to fetch resources asynchronously across the network.</li>
+                    <li>The fetch specification differs from <em>jQuery.ajax()</em> in three main ways: (1) the Promise returned from fetch() won't reject on HTTP error status; (2) fetch() won't receive cross-site cookies; and (3) fetch won't send cookies.</li>
+                    <li>The fetch() method can optionally accept a second parameter, an init object that can control a number of different settings.</li>
+                </ul>
+            </p>
+            <p>
+                Headers
+                <ul id="ulOne">
+                    <li>The Headers interface can create headers object via the <em>Headers()</em> constructor.</li>
+                    <li>Since headers can be sent in requests and received in responses, and have various limitations about what information can and should be mutable, headers objects have a guard property. This is not exposed to the Web, but it affects which mutation operations are allowed on the headers object.</li>
+                </ul>
+            </p>
+            <p>
+                Response objects
+                <ul id="ulOne">
+                    <li>Response instances are returned when <em>fetch()</em> promises are resolved.</li>
+                    <li>The <em>Response()</em> constructor takes two optional arguments -- a body for the response, and an init object similart to the one that <em>Request()</em> accepts.</li>
+                </ul>
+            </p>
+        </section>
+    </main>
+    <hr>
+    <nav>
+        <ul>
+            <li><a href="week9.html">Previous Page</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <footer>
+        <section>
+            <p>Justine Ellerbe </br>
+                CIT261 | Winter 2020 </br>
+                Brigham Young University - Idaho
+            </p>
+        </section>
+    </footer>
+</body>
+
+</html>
