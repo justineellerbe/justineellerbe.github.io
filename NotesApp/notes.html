@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="notes.css">
+</head>
+
+<body>
+    <header><strong>Notes</strong></header>
+    <section class="input">
+        <textarea id="fileName" placeholder="Note Title" rows="1" cols="40"></textarea>
+        <textarea id="noteData" placeholder="Type here..." rows="4" cols="40"></textarea>
+    <br />
+        <button type="button" class = "button" onclick=saveNoteToFile()>Save</button>
+    </section>
+    <section id = "myList">
+    </section>
+    <script src="notes.js"></script>
+    <hr>
+    <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </nav>
+        <section>
+    <footer>        
+            <p>Justine Ellerbe </br>
+                CIT261 | Winter 2020 </br>
+                Brigham Young University - Idaho
+            </p>
+        </section>
+    </footer>
+</body>
+
+</html>
